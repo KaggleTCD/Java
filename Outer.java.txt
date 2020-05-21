@@ -1,0 +1,21 @@
+Normal or regular inner classes
+
+public class Outer{
+    
+    class B{
+        public void m1(){
+            System.out.println(Inner class);
+        }
+    }
+    
+    public void m2(){
+        B b = new B();
+        b.m1();
+    }
+    
+     Accessing inner class method from the instance area of the outer class
+    public static void main(String args[]){
+        Outer a = new Outer();
+        a.m2();
+    }
+}
