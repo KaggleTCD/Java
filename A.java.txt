@@ -1,0 +1,17 @@
+//Normal or regular inner classes
+
+public class A{
+    
+    class B{
+        public void m1(){
+            System.out.println("Inner class");
+        }
+    }
+    
+    // Accessing inner class method from the static area of the outer class
+    public static void main(String args[]){
+        A a = new A();
+        A.B inner = a.new B();
+        inner.m1();
+    }
+}
